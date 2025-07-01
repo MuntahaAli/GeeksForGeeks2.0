@@ -317,7 +317,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  border: beige; /* Change to your desired color code */
+  border: beige; 
   padding: 10px;
   border-radius: 4px;
   display: block;
@@ -327,7 +327,7 @@ textarea {
 }
 
 #contact-form form button {
-  border: beige; /* Change to your desired color code */
+  border: beige; 
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -342,25 +342,40 @@ textarea {
   background-color: #333;
 }
 
-/* 1. Base: hide native checkbox */
+/* Base: hide native checkbox */
 #menu-toggle {
   display: none;
 }
-/* 5. Responsive wrapper: only show this mobile nav on small */
+
+/* To hide mobile nav on desktop mode */
+#mobile-nav {
+  display: none;
+  padding: 10px;
+  background-color: #001f3f;
+  /* position: relative;    so the menu can drop down */
+  width: 100vw;
+}
+
+/*  Responsive wrapper: only show this mobile nav on small */
 @media (max-width: 768px) {
   /* hide any desktop nav if you have one */
   #nav {
     display: none;
   }
 
-  /* 2. Style the hamburger label */
+  #mobile-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style the hamburger label */
   .hamburger-icon {
     cursor: pointer;
     font-size: 1.5rem;
     color: white;
   }
 
-  /* 3. By default, hide the links */
+  /* By default, hide the links */
   .mobile-nav-links {
     display: none;
     flex-direction: column;
@@ -372,17 +387,9 @@ textarea {
     right: 0;
   }
 
-  /* 4. When checkbox is checked, show the menu */
+  /* When checkbox is checked, show the menu */
   #menu-toggle:checked + .hamburger-icon + .mobile-nav-links {
     display: flex;
-  }
-
-  #mobile-nav {
-    display: block; /* or flex if you prefer */
-    padding: 10px;
-    background-color: #001f3f;
-    /* position: relative;    so the menu can drop down */
-    /* width: 100vw; */
   }
 
   .mobile-nav-links a,
@@ -396,6 +403,102 @@ textarea {
     width: 200px;
   }
 
-  /* other sections styling */
-  
+  /* home sections styling */
+  #div1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    height: 480px;
+  }
+  #div2,
+  #div3 {
+    max-width: min-content;
+    box-sizing: border-box;
+  }
+  #div3 {
+    margin-top: 150px;
+  }
+
+  /* About section responsive styling */
+  #About {
+    padding: 20px;
+  }
+  #about-h2 {
+    font-size: 24px;
+  }
+  .about-sections {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  #about-sections1,
+  #about-sections2,
+  #about-sections3 {
+    width: 90%;
+    margin: 10px 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Course section responsive styyling */
+  #Courses {
+    padding: 20px;
+  }
+  #course-h2 {
+    font-size: 24px;
+  }
+  .course {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  #course1,
+  #course2,
+  #course3,
+  #course4,
+  #course5,
+  #course6 {
+    width: 90%;
+    margin: 10px 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Blog section responsive styling */
+  #Blog {
+    padding: 20px;
+  }
+  .blog-posts {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Contact section responsive styling */
+  #contact-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  #contact-intro {
+    width: 100%;
+    height: 458px;
+  }
+
+  #contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 90%;
+    margin: 10px auto;
+  }
+  #contact-form form button {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
