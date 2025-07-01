@@ -1,0 +1,401 @@
+* {
+  font-family: "Times New Roman", sans-serif;
+}
+
+#header {
+  background-color: #001f3f;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Flex container for nav */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Centered nav links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Nav link styles */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+/* Button styling */
+#Login {
+  padding: 10px 20px;
+  background-color: cyan;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#Login:hover {
+  background-color: #5391a5;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+
+#div1 {
+  background-color: lightgray;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#div2 {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0%;
+  width: 60%;
+}
+
+#div3 {
+  padding: 0%;
+  width: 300px;
+  height: 150px;
+  margin-right: 50px;
+}
+
+#About {
+  text-align: center;
+}
+
+#about-h2 {
+  font-size: 30px;
+}
+
+#about-content {
+  color: rgb(10, 0, 0);
+
+  border-radius: 10px;
+}
+
+.about-sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#about-sections1 {
+  background-color: lightblue;
+  height: 220px;
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#about-sections2 {
+  background-color: silver;
+  height: 220px;
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#about-sections3 {
+  background-color: steelblue;
+  height: 220px;
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#Courses {
+  font-size: 16px;
+  text-align: center;
+}
+
+#course-h2 {
+  font-size: 30px;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+#course1 {
+  background-color: lightblue;
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+#course2 {
+  background-color: silver;
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#course3 {
+  background-color: steelblue;
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#course4 {
+  background-color: rgb(214, 247, 241);
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#course5 {
+  background-color: rgb(229, 211, 171);
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+#course6 {
+  background-color: rgb(161, 177, 189);
+  height: 220px;
+  width: 50%;
+  margin-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.course-item button {
+  background-color: rgb(1, 19, 28);
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 4px 6px gray;
+  color: white;
+}
+
+.course-item button:hover {
+  text-decoration: underline;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  background-color: gray;
+}
+
+#Blog {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+#blog-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  color: black;
+}
+
+.post p {
+  color: black;
+}
+
+.post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  background-color: #f4f6f7;
+}
+
+#contact-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+}
+
+#contact-intro {
+  width: 50%;
+  background-color: #f8f8f8;
+}
+
+.contact-intro1 {
+  margin-left: 40px;
+}
+
+#contact-intro h1 {
+  font-size: 40px;
+}
+
+#contact-form {
+  background-color: rgb(243 244 246);
+  padding: 40px 20px;
+  width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: beige; /* Change to your desired color code */
+  padding: 10px;
+  border-radius: 4px;
+  display: block;
+  margin-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+}
+
+#contact-form form button {
+  border: beige; /* Change to your desired color code */
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40%;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#contact-form button:hover {
+  text-decoration: underline;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  background-color: #333;
+}
+
+/* 1. Base: hide native checkbox */
+#menu-toggle {
+  display: none;
+}
+/* 5. Responsive wrapper: only show this mobile nav on small */
+@media (max-width: 768px) {
+  /* hide any desktop nav if you have one */
+  #nav {
+    display: none;
+  }
+
+  /* 2. Style the hamburger label */
+  .hamburger-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  /* 3. By default, hide the links */
+  .mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #001f3f;
+    position: absolute;
+    padding-left: 40px;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  /* 4. When checkbox is checked, show the menu */
+  #menu-toggle:checked + .hamburger-icon + .mobile-nav-links {
+    display: flex;
+  }
+
+  #mobile-nav {
+    display: block; /* or flex if you prefer */
+    padding: 10px;
+    background-color: #001f3f;
+    /* position: relative;    so the menu can drop down */
+    /* width: 100vw; */
+  }
+
+  .mobile-nav-links a,
+  .mobile-nav-links button {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 200px;
+  }
+
+  /* other sections styling */
+  
+}
